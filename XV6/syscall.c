@@ -129,6 +129,7 @@ static int (*syscalls[])(void) = {
 [SYS_close]   sys_close,
 [SYS_date]    sys_date,
 };
+
 char* syscall_name[] =
 {
 "None",
@@ -155,9 +156,6 @@ char* syscall_name[] =
 "close",
 "date"
 };
-
-//comment lines to add arguments of the call.
-
 void
 syscall(void)
 {
@@ -176,4 +174,3 @@ syscall(void)
     curproc->tf->eax = -1;
   }
 }
-

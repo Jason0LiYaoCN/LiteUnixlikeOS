@@ -176,12 +176,12 @@ UPROGS=\
 	_ls\
 	_mkdir\
 	_rm\
-	_date\
 	_sh\
 	_stressfs\
 	_usertests\
 	_wc\
 	_zombie\
+	_date\
 
 fs.img: mkfs README $(UPROGS)
 	./mkfs fs.img README $(UPROGS)

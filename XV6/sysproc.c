@@ -91,7 +91,7 @@ sys_uptime(void)
 }
 
 int
-sys_date(struct rtcdate* r)
+sys_date(struct rtcdate *r)
 {
   if (argptr(0, (void *)&r, sizeof(*r)) < 0)
     return -1;
